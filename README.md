@@ -10,15 +10,19 @@ Download the Cyberops Workstation VM, and Security Onion.
 While these are downloading, head to https://www.7-zip.org/download.html and download the latest 7zip for Mac. 
 
 Install HomeBrew if you do not already have it. 
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-install Qemu
+install Qemu-
+
 brew install qemu
 
 now that your downloads are finished you will be using 7zip to open up the .ova files (i just did all these inside my download folder, you can make your own directory)
+
 ./7zz x <path_to_directory>/cyberops_workstation.ova 
 
-Next step is to covert the needed file- the .vmdk
+Next step is to covert the needed file- the .vmdk-
+
 qemu-img convert -f vmdk -O raw <path_to_directory\ Workstation-disk001.vmdk cyberops.raw
 
 now that this is done we have a .raw file that is ready to be used with qemu.
