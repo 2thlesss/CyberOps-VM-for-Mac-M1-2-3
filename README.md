@@ -23,7 +23,7 @@ now that your downloads are finished you will be using 7zip to open up the .ova 
 
 Next step is to covert the needed file- the .vmdk-
 
-qemu-img convert -f vmdk -O raw <path_to_directory\ Workstation-disk001.vmdk cyberops.raw
+qemu-img convert -f vmdk -O raw <path_to_directory>\ Workstation-disk001.vmdk cyberops.raw
 
 now that this is done we have a .raw file that is ready to be used with qemu.
 
