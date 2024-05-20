@@ -34,3 +34,8 @@ qemu-system-x86_64 -m 8192 -drive file=cyberops.raw,format=raw -boot d -net nic 
 -m is memory, please edit it based off the memory of your system. -smp is how many cores you wish to give to the vm.
 
 qemu should open and you will have an instance of the the Cyberops Workstation
+
+****NOTE****
+This will work for Security Onion as well. 
+
+
